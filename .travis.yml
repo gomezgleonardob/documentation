@@ -14,4 +14,13 @@ install:
   - python3 -m sphinx -b html . _build/html
   - mv _build/html/ ../
 only:
-  - master
+  - gh-pages
+deploy:
+  local_dir: output
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  target_branch: master
+  on:
+    branch: gh-pages
