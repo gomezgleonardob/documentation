@@ -14,11 +14,13 @@ y dar una oportunidad a miles de pacientes que son devueltos a casa sin esperanz
 
 **Descripción del Proyecto**
 
+here is a pdf file :download:`pdf <docs/mypdf.pdf>`
+
 .. toctree::
-   
-   files/app
+    :maxdepth: 6
+  
    files/hardware
-   files/firmware
-   files/webserver
+   files/software
+  
    
 

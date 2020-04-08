@@ -3,14 +3,13 @@ OPENVENTI
 
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 6
    :caption: Contenidos:
    
 
-   app
-   firmware
    hardware
-   webswerver
+   software
+
 
 
 

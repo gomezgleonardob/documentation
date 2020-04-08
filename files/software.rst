@@ -1,4 +1,5 @@
-
+SOFTWARE
+########
 
 APLICACIÓN MOVIL
 ================
@@ -23,39 +24,39 @@ FUNCIONES
 ^^^^^^^^^
 
 USUARIOS
-~~~~~~~~
+^^^^^^^^
 
 
 EMPAREJAMIENTO
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 .. image:: img/conn.png
   :scale: 75
 
 VISUALIZACIÓN DE DATOS
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: img/datos.png
   :scale: 75
 
 TRANSIMISIÓN DE DATOS
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 Se usara tecnología Wifi, aplicando norma ANSI/TIA 1149, motivo controlar que el espectro radioeléctrico y no obstaculizar conexión de otros equipos, incluso otros ventiladores.
 
 La norma ANSI/TIA 1149 se usa para Servicio de Alerta Móvil Comercial (CMAS) sobre los sistemas CDMA 
 
 RECEPCIÓN DE DATOS
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 PANEL DE ADMINISTRACIÓN
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: img/paciente.png
    :scale: 75
 
 CIERRE DE CESIÓN
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 TRATAMIENTO DEL PACIENTE
 ------------------------
@@ -83,3 +84,4 @@ Los Botones de abajo permiten modificar los siguientes parámetros:
     3) Porcentaje de Oxígeno, que puede estar entre 0 y 50%
     4) RR o Respiration Rate o Respiraciones por minuto, que puede estar entre 9 y 16
 
+.. include:: webserver.rst
