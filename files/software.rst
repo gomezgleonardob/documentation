@@ -18,10 +18,7 @@ El sistema estará constituido por los siguientes componentes:
   :width: 400
 
 FLUJO DE TRABAJO
------------------
-
-FUNCIONES
-^^^^^^^^^
+----------------
 
 USUARIOS
 ^^^^^^^^
