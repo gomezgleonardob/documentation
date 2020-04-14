@@ -9,8 +9,6 @@ y dar una oportunidad a miles de pacientes que son devueltos a casa sin esperanz
 .. image:: files/img/diagrama.png
   :width: 550
 
-**WEBSITE**
-
 **CONTENIDO**
 
 
