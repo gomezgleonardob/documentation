@@ -7,9 +7,9 @@ COMPONTENTES NEUMÁTICOS
 
 .. raw:: html
 
-  <embed src="ventilator_pneumatics.pdf" width="100%" height="600px" />
+  <embed src="https://github.com/openventi/hardware/blob/master/ventilator_pneumatics.pdf" width="100%" height="600px" />
 
-   <p align ="justify"> El proceso inicia con una mezcla de aire filtrado y oxigeno alimentada por un compressor pneumatico.
+   <p align ="justify"> El proceso inicia con una mezcla hde aire filtrado y oxigeno alimentada por un compressor pneumatico.
    El contenido de oxígeno es la mezcla es monitoreado por un medidor de oxigeno.
    El respirado monitorea el flujo de la mezcla de aire y oxigeno y se regula por medio de una valvula de control.
    La mezcla de aire oxigenado se envia al paciente.
@@ -22,7 +22,7 @@ COMPONTENTES ELECTRÓNICOS
 
 .. raw:: html
 
-    <embed src="ventilator_schematic.pdf" width="100%" height="600px" />
+    <embed src="https://github.com/openventi/hardware/blob/master/ventilator_schematic.pdf" width="100%" height="600px" />
 
     <b>Pag1</b>
 
@@ -45,7 +45,7 @@ COMPONTENTES ELECTRÓNICOS
         <ul>Circuito para activar el buzzer (alarma) usando la salida de la tarjeta Yubox</ul>
     </ol>
 
-    <b>Pag 4
+    <b>Pag 4</b>
     
     <ol>
      <ul> Circuido para medir la corriente que esta consumiendo el ventilador (compresor?), leer la cantidad de oxigeno, usando convertidores analogicos a digitales</ul>
