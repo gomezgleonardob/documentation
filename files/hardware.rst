@@ -7,7 +7,11 @@ COMPONTENTES NEUMÁTICOS
 
 .. raw:: html
 
-  <embed src="https://github.com/openventi/hardware/blob/master/ventilator_pneumatics.pdf" width="100%" height="600px" />
+    <object data="https://github.com/openventi/hardware/blob/master/ventilator_pneumatics.pdf" type="application/pdf" width="700px" height="700px">
+        <embed src="https://github.com/openventi/hardware/blob/master/ventilator_pneumatics.pdf">
+            <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/openventi/hardware/blob/master/ventilator_pneumatics.pdf">Download PDF</a>.</p>
+        </embed>
+    </object>
 
    <p align ="justify"> El proceso inicia con una mezcla hde aire filtrado y oxigeno alimentada por un compressor pneumatico.
    El contenido de oxígeno es la mezcla es monitoreado por un medidor de oxigeno.
