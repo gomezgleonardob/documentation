@@ -7,7 +7,7 @@ COMPONTENTES NEUMÁTICOS
 
 .. raw:: html
 
-  <embed src="files/ventilator_pneumatics.pdf" width="100%" height="600px" />
+  <embed src="ventilator_pneumatics.pdf" width="100%" height="600px" />
 
    <p align ="justify"> El proceso inicia con una mezcla de aire filtrado y oxigeno alimentada por un compressor pneumatico.
    El contenido de oxígeno es la mezcla es monitoreado por un medidor de oxigeno.
@@ -22,7 +22,7 @@ COMPONTENTES ELECTRÓNICOS
 
 .. raw:: html
 
-    <embed src="files/ventilator_schematic.pdf" width="100%" height="600px" />
+    <embed src="ventilator_schematic.pdf" width="100%" height="600px" />
 
     <b>Pag1</b>
 
