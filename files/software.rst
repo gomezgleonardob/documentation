@@ -51,8 +51,6 @@ RECEPCIÓN DE DATOS
 PANEL DE ADMINISTRACIÓN
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: img/paciente.png
-   :scale: 75
 
 CIERRE DE CESIÓN
 ^^^^^^^^^^^^^^^^
@@ -60,8 +58,6 @@ CIERRE DE CESIÓN
 TRATAMIENTO DEL PACIENTE
 ------------------------
 
-.. image:: img/paciente.png
-   :scale: 75
 
 HISTORIA CLÍNICA
 ^^^^^^^^^^^^^^^^
@@ -72,6 +68,9 @@ Puede ser utilizado el número de DNI. A obtener del HIS del lugar de atención.
 TESTING
 -------
 
+**Ambiente IOS**
+
+**Ambiente Android**
 
 .. include:: api.rst
 
