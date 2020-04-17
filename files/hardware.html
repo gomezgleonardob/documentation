@@ -1,0 +1,569 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>HARDWARE &mdash; Open-Venti 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SOFTWARE" href="software.html" />
+    <link rel="prev" title="OPENVENTI" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Open-Venti
+          
+
+          
+            
+            <img src="../_static/oventi.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">HARDWARE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#compontentes-neumaticos">COMPONTENTES NEUMÁTICOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compontentes-electronicos">COMPONTENTES ELECTRÓNICOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#firmware">FIRMWARE</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tramas-de-comunicacion">TRAMAS DE COMUNICACIÓN</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#datos-de-graficas">DATOS DE GRÁFICAS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#seteo-de-parametros">SETEO DE PARÁMETROS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#obtencion-de-parametros">OBTENCIÓN DE PÁRAMETROS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#envio-de-alertas">ENVÍO DE ALERTAS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">SOFTWARE</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Open-Venti</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>HARDWARE</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/files/hardware.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hardware">
+<h1>HARDWARE<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="compontentes-neumaticos">
+<h2>COMPONTENTES NEUMÁTICOS<a class="headerlink" href="#compontentes-neumaticos" title="Permalink to this headline">¶</a></h2>
+ <object data="../_static/assets/ventilator_pneumatics.pdf" type="application/pdf" width="700px" height="700px">
+     <embed src="../_static/assets/ventilator_penumatics.pdf">
+ </object><br>
+
+
+<p align ="justify"> El proceso inicia con una mezcla hde aire filtrado y oxigeno alimentada por un compressor pneumatico.
+El contenido de oxígeno es la mezcla es monitoreado por un medidor de oxigeno.
+El respirado monitorea el flujo de la mezcla de aire y oxigeno y se regula por medio de una valvula de control.
+La mezcla de aire oxigenado se envia al paciente.
+El aire que retorna del paciente pasa por un secador donde el aire seco se devuelve al ambiente y se drena la humedad </p></div>
+<div class="section" id="compontentes-electronicos">
+<h2>COMPONTENTES ELECTRÓNICOS<a class="headerlink" href="#compontentes-electronicos" title="Permalink to this headline">¶</a></h2>
+<object data="../_static/assets/ventilator_schematic.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="../_static/assets/ventilator_schematic.pdf">
+</object><br>
+
+<b>Esquema 1</b>
+
+<ol>
+    <ul> Layout de conectores para usar con tarjeta Yubox  </ul>
+    <ul> Circuito de filtrado para la senhal de comunicaciones I2C </ul>
+    <ul>  Schematic del sensor (Falta el modelo del sensor?) de presion con conexiones de: poder (linea viva y tierra), referencia de senhal, puertos de comunicacion (I2C) </ul>
+    <ul>  Schematic del sensor pe(Presión Barómetrica) presion diferencial (Sensirion SDP31-500PA): con conexions de: poder (línea viva y tierra) y puertos de comunicacion I2C  </ul>
+</ol>
+
+<b>Esquema 2</b>
+
+<ol>
+    <ul>Convertidor de corriente de 120 voltios ac? a 5 voltios DC (voltaje del nodo Yubox?)</ul>
+</ol>
+
+<b>Esquema 3</b>
+
+<ol>
+    <ul>Circuito para activar el buzzer (alarma) usando la salida de la tarjeta Yubox</ul>
+</ol>
+
+<b>Esquema 4</b>
+
+<ol>
+ <ul> Circuido para medir la corriente que esta consumiendo el ventilador (compresor?), leer la cantidad de oxigeno, usando convertidores analogicos a digitales</ul>
+</ol></div>
+<div class="section" id="firmware">
+<h2>FIRMWARE<a class="headerlink" href="#firmware" title="Permalink to this headline">¶</a></h2>
+<p align ="justify"> El control electrónico está basado en la tarjeta de control IoT Yubox Node y utiliza un blower de grado médico para la provisión del volumen y presión de aire necesarios, además de sensores médicos especializados</p>
+
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fopenventi%2Fvideos%2F2677484919140966%2F&show_text=0&width=476" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe><div class="section" id="tramas-de-comunicacion">
+<h3>TRAMAS DE COMUNICACIÓN<a class="headerlink" href="#tramas-de-comunicacion" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="datos-de-graficas">
+<h4>DATOS DE GRÁFICAS<a class="headerlink" href="#datos-de-graficas" title="Permalink to this headline">¶</a></h4>
+<p><strong>Orientación</strong></p>
+<p>Yubox —&gt; Cliente</p>
+<table border="1" class="colwidths-given docutils" id="id1">
+<caption><span class="caption-text"><strong>Parámetros de Entrada</strong></span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Atributo</th>
+<th class="head">Detalle</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>t</td>
+<td>Tipo de trama siendo 0 una trama de datos de gráficas</td>
+</tr>
+<tr class="row-odd"><td>d</td>
+<td>Arreglo de datos para las tres gráficas, representando un punto a la vez</td>
+</tr>
+</tbody>
+</table>
+<p><strong>JSON IN</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;t&quot;</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span>
+  <span class="s2">&quot;d&quot;</span><span class="o">:</span><span class="p">[</span>
+    <span class="p">(</span><span class="kr">double</span><span class="p">),</span>
+    <span class="p">(</span><span class="kr">double</span><span class="p">),</span>
+    <span class="p">(</span><span class="kr">double</span><span class="p">)</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>JSON EJEMPLO</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span> <span class="p">{</span>
+   <span class="s2">&quot;t&quot;</span><span class="o">:</span><span class="mi">0</span><span class="p">,</span>
+  <span class="s2">&quot;d&quot;</span><span class="o">:</span><span class="p">[</span>
+    <span class="mf">1.2</span><span class="p">,</span>
+    <span class="mf">2.01</span><span class="p">,</span>
+    <span class="mi">3</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="seteo-de-parametros">
+<h4>SETEO DE PARÁMETROS<a class="headerlink" href="#seteo-de-parametros" title="Permalink to this headline">¶</a></h4>
+<p><strong>Orientación</strong></p>
+<p>Cliente -&gt; Yubox -&gt; Cliente</p>
+<table border="1" class="colwidths-given docutils" id="id2">
+<caption><span class="caption-text"><strong>Parámetros de Entrada</strong></span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Atributo</th>
+<th class="head">Detalle</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Identificador de transacción. Permite mapear respuestas a peticiones.</td>
+</tr>
+<tr class="row-odd"><td><strong>action</strong></td>
+<td>Acción a realizar. Para el seteo de parámetros es la cadena <strong>set</strong></td>
+</tr>
+<tr class="row-even"><td><strong>param</strong></td>
+<td>Parámetro del respirador que se quiere setear (Valores posibles: <strong>TV,</strong>  <strong>PEEP,</strong> <strong>O2,</strong> <strong>RR</strong>).</td>
+</tr>
+<tr class="row-odd"><td><strong>value</strong></td>
+<td>Valor que se desea setear al parámetro definido en <strong>param</strong></td>
+</tr>
+<tr class="row-even"><td><strong>ts</strong></td>
+<td>Timestamp en formato UNIX en el que se realiza la petición.</td>
+</tr>
+<tr class="row-odd"><td><strong>token</strong></td>
+<td>Token HMAC para autenticación e integridad de datos.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>ts:</strong> En formato Unix necesario para evitar ataques de replay.
+<strong>token:</strong> Deberá calcularse sobre la trama con el token seteado en una cadena vacía.</p>
+</div>
+<p><strong>JSON IN</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="p">(</span><span class="kr">int</span><span class="p">),</span>
+   <span class="s2">&quot;action&quot;</span><span class="o">:</span> <span class="s2">&quot;set&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;param&quot;</span><span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">),</span>
+   <span class="s2">&quot;value&quot;</span><span class="o">:</span> <span class="p">(</span><span class="nx">mixed</span><span class="p">),</span>
+   <span class="s2">&quot;ts&quot;</span><span class="o">:</span> <span class="p">(</span><span class="kr">int</span><span class="p">),</span>
+   <span class="s2">&quot;token&quot;</span><span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>JSON EJEMPLO</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="mi">12345</span><span class="p">,</span>
+   <span class="s2">&quot;action&quot;</span><span class="o">:</span><span class="s2">&quot;set&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;param&quot;</span><span class="o">:</span><span class="s2">&quot;PEEP&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="mf">5.2</span><span class="p">,</span>
+   <span class="s2">&quot;token&quot;</span><span class="o">:</span><span class="s2">&quot;ba837ba9ba837ba9ba837ba9ba837ba9ba837ba9&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>JSON RESPUESTA</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="mi">12345</span><span class="p">,</span>
+   <span class="s2">&quot;status&quot;</span><span class="o">:</span><span class="mi">200</span><span class="p">,</span>
+   <span class="s2">&quot;msg&quot;</span><span class="o">:</span><span class="s2">&quot;Operación_Exitosa&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="mf">5.2</span><span class="p">,</span>
+   <span class="s2">&quot;token&quot;</span><span class="o">:</span><span class="s2">&quot;1231231212312312123123121231231212312312&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id3">
+<caption><span class="caption-text"><strong>Respuesta</strong></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Atributo</th>
+<th class="head">Detalle</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>dentificador de transacción. Permite mapear respuestas a peticiones.</td>
+</tr>
+<tr class="row-odd"><td><strong>status</strong></td>
+<td>Estado de cumplimiento de la transacción.</td>
+</tr>
+<tr class="row-even"><td><strong>msg</strong></td>
+<td>Respuesta del resultado de la transacción.</td>
+</tr>
+<tr class="row-odd"><td><strong>value</strong></td>
+<td>Valor que se desea setear al parámetro definido en <strong>param</strong>.</td>
+</tr>
+<tr class="row-even"><td><strong>token</strong></td>
+<td>Token HMAC para autenticación e integridad de datos.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">La respuesta deberá reflejar el mismo id recibido en la petición.</p>
+</div>
+</div>
+<div class="section" id="obtencion-de-parametros">
+<h4>OBTENCIÓN DE PÁRAMETROS<a class="headerlink" href="#obtencion-de-parametros" title="Permalink to this headline">¶</a></h4>
+<p>Cliente -&gt; Yubox -&gt; Cliente</p>
+<table border="1" class="colwidths-given docutils" id="id4">
+<caption><span class="caption-text"><strong>Parámetros de Entrada</strong></span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Atributo</th>
+<th class="head">Detalle</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Identificador de transacción. Permite mapear respuestas a peticiones.</td>
+</tr>
+<tr class="row-odd"><td><strong>action</strong></td>
+<td>Acción a realizar. Para el seteo de parámetros es la cadena <strong>get</strong>.</td>
+</tr>
+<tr class="row-even"><td><strong>param</strong></td>
+<td>Parámetro del respirador que se quiere setear (Valores posibles: <strong>TV,</strong>  <strong>PEEP,</strong> <strong>O2,</strong> <strong>RR</strong>).</td>
+</tr>
+<tr class="row-odd"><td><strong>token</strong></td>
+<td>Token HMAC para autenticación e integridad de datos.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>token:</strong> Deberá calcularse sobre la trama con el token seteado en una cadena vacía.</p>
+</div>
+<p><strong>JSON IN</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="p">(</span><span class="kr">int</span><span class="p">),</span>
+   <span class="s2">&quot;action&quot;</span><span class="o">:</span> <span class="s2">&quot;get&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;param&quot;</span><span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">),</span>
+   <span class="s2">&quot;token&quot;</span><span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>JSON EJEMPLO</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="mi">12345</span><span class="p">,</span>
+   <span class="s2">&quot;action&quot;</span><span class="o">:</span><span class="s2">&quot;get&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;param&quot;</span><span class="o">:</span><span class="s2">&quot;PEEP&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;token&quot;</span><span class="o">:</span><span class="s2">&quot;ba837ba9ba837ba9ba837ba9ba837ba9ba837ba9&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>JSON RESPUESTA</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;id&quot;</span><span class="o">:</span><span class="mi">12345</span><span class="p">,</span>
+   <span class="s2">&quot;status&quot;</span><span class="o">:</span><span class="mi">200</span><span class="p">,</span>
+   <span class="s2">&quot;msg&quot;</span><span class="o">:</span><span class="s2">&quot;Operación_Exitosa&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;value&quot;</span><span class="o">:</span><span class="mf">5.2</span><span class="p">,</span>
+   <span class="s2">&quot;token&quot;</span><span class="o">:</span><span class="s2">&quot;1231231212312312123123121231231212312312&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id5">
+<caption><span class="caption-text"><strong>Respuesta</strong></span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Atributo</th>
+<th class="head">Detalle</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>id</strong></td>
+<td>Identificador de transacción. Permite mapear respuestas a peticiones.</td>
+</tr>
+<tr class="row-odd"><td><strong>status</strong></td>
+<td>Estado de cumplimiento de la transacción.</td>
+</tr>
+<tr class="row-even"><td><strong>msg</strong></td>
+<td>Respuesta del resultado de la transacción.</td>
+</tr>
+<tr class="row-odd"><td><strong>value</strong></td>
+<td>Valor que se desea setear al parámetro definido en <strong>param</strong>.</td>
+</tr>
+<tr class="row-even"><td><strong>token</strong></td>
+<td>Token HMAC para autenticación e integridad de datos.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">La respuesta deberá reflejar el mismo id recibido en la petición.</p>
+</div>
+</div>
+<div class="section" id="envio-de-alertas">
+<h4>ENVÍO DE ALERTAS<a class="headerlink" href="#envio-de-alertas" title="Permalink to this headline">¶</a></h4>
+<p><strong>Orientación</strong></p>
+<p>Yubox -&gt; Cliente</p>
+<table border="1" class="colwidths-given docutils" id="id6">
+<caption><span class="caption-text"><strong>Parámetros de Entrada</strong></span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Atributo</th>
+<th class="head">Detalle</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>t</strong></td>
+<td>Tipo de trama siendo 1 una trama de alerta.</td>
+</tr>
+<tr class="row-odd"><td><strong>msg</strong></td>
+<td>Cadena que describe la alerta.</td>
+</tr>
+<tr class="row-even"><td><strong>severidad</strong></td>
+<td>Nivel de riesgo de la alerta.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>JSON IN</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;t&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span>
+  <span class="s2">&quot;msg&quot;</span><span class="o">:</span> <span class="p">(</span><span class="nx">string</span><span class="p">),</span>
+  <span class="s2">&quot;severidad&quot;</span><span class="o">:</span> <span class="p">(</span><span class="kr">int</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>JSON EJEMPLO</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="s2">&quot;t&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span>
+   <span class="s2">&quot;msg&quot;</span><span class="o">:</span><span class="s2">&quot;Oxígeno agotado&quot;</span><span class="p">,</span>
+   <span class="s2">&quot;severidad&quot;</span><span class="o">:</span><span class="mi">5</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="software.html" class="btn btn-neutral float-right" title="SOFTWARE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="OPENVENTI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020,GPL
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

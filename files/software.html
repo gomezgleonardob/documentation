@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SOFTWARE &mdash; Open-Venti 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="HARDWARE" href="hardware.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Open-Venti
+          
+
+          
+            
+            <img src="../_static/oventi.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="hardware.html">HARDWARE</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SOFTWARE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aplicacion-movil">APLICACIÓN MOVIL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#descripcion-general">DESCRIPCIÓN GENERAL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flujo-de-trabajo">FLUJO DE TRABAJO</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#usuarios">USUARIOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#emparejamiento">EMPAREJAMIENTO</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualizacion-de-datos">VISUALIZACIÓN DE DATOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transimision-de-datos">TRANSIMISIÓN DE DATOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#recepcion-de-datos">RECEPCIÓN DE DATOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#panel-de-administracion">PANEL DE ADMINISTRACIÓN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cierre-de-cesion">CIERRE DE CESIÓN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#tratamiento-del-paciente">TRATAMIENTO DEL PACIENTE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#historia-clinica">HISTORIA CLÍNICA</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#testing">TESTING</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-rest">API-REST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#webserver">WEBSERVER</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Open-Venti</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>SOFTWARE</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/files/software.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="software">
+<h1>SOFTWARE<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="aplicacion-movil">
+<h2>APLICACIÓN MOVIL<a class="headerlink" href="#aplicacion-movil" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="descripcion-general">
+<h3>DESCRIPCIÓN GENERAL<a class="headerlink" href="#descripcion-general" title="Permalink to this headline">¶</a></h3>
+<p>La aplicación móvil OpenVenti tiene como finalidad el monitoreo y administración del respirador artificial del mismo nombre, de forma segura e intuitiva.</p>
+<p>El sistema estará constituido por los siguientes componentes:</p>
+<p><strong>Estructura de la Aplicación</strong></p>
+<a class="reference internal image-reference" href="../_images/structure.png"><img alt="../_images/structure.png" src="../_images/structure.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="flujo-de-trabajo">
+<h3>FLUJO DE TRABAJO<a class="headerlink" href="#flujo-de-trabajo" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="usuarios">
+<h4>USUARIOS<a class="headerlink" href="#usuarios" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="emparejamiento">
+<h4>EMPAREJAMIENTO<a class="headerlink" href="#emparejamiento" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="visualizacion-de-datos">
+<h4>VISUALIZACIÓN DE DATOS<a class="headerlink" href="#visualizacion-de-datos" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="transimision-de-datos">
+<h4>TRANSIMISIÓN DE DATOS<a class="headerlink" href="#transimision-de-datos" title="Permalink to this headline">¶</a></h4>
+<p>Se usara tecnología Wifi, aplicando norma ANSI/TIA 1149, motivo controlar que el espectro radioeléctrico y no obstaculizar conexión de otros equipos, incluso otros ventiladores.</p>
+<p>La norma ANSI/TIA 1149 se usa para Servicio de Alerta Móvil Comercial (CMAS) sobre los sistemas CDMA</p>
+</div>
+<div class="section" id="recepcion-de-datos">
+<h4>RECEPCIÓN DE DATOS<a class="headerlink" href="#recepcion-de-datos" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="panel-de-administracion">
+<h4>PANEL DE ADMINISTRACIÓN<a class="headerlink" href="#panel-de-administracion" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="cierre-de-cesion">
+<h4>CIERRE DE CESIÓN<a class="headerlink" href="#cierre-de-cesion" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="tratamiento-del-paciente">
+<h3>TRATAMIENTO DEL PACIENTE<a class="headerlink" href="#tratamiento-del-paciente" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="historia-clinica">
+<h4>HISTORIA CLÍNICA<a class="headerlink" href="#historia-clinica" title="Permalink to this headline">¶</a></h4>
+<p>Número que identifica de manera única al paciente, incluso si regresa a la Institución.
+Puede ser utilizado el número de DNI. A obtener del HIS del lugar de atención.</p>
+</div>
+</div>
+<div class="section" id="testing">
+<h3>TESTING<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h3>
+<p><strong>Ambiente IOS</strong></p>
+<p><strong>Ambiente Android</strong></p>
+</div>
+</div>
+<div class="section" id="api-rest">
+<h2>API-REST<a class="headerlink" href="#api-rest" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="webserver">
+<h2>WEBSERVER<a class="headerlink" href="#webserver" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="hardware.html" class="btn btn-neutral float-left" title="HARDWARE" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020,GPL
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
