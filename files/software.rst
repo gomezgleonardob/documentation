@@ -29,14 +29,10 @@ USUARIOS
 EMPAREJAMIENTO
 ^^^^^^^^^^^^^^
 
-.. image:: img/conn.png
-  :scale: 75
-
 VISUALIZACIÓN DE DATOS
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: img/datos.png
-  :scale: 75
+
 
 TRANSIMISIÓN DE DATOS
 ^^^^^^^^^^^^^^^^^^^^^
