@@ -8,4 +8,4 @@ https://openventi.readthedocs.io/es/latest/
 
 # Documentation Status
 
-[![Documentation Status](https://readthedocs.org/projects/doc-open-venti/badge/?version=latest)](https://doc-open-venti.readthedocs.io/en/latest/?badge=latest)
+![Documentation Status](https://readthedocs.org/projects/openventi/badge/?version=latest)](https://openventi.readthedocs.io/es/latest/?badge=latest)
